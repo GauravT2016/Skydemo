@@ -1,10 +1,9 @@
 pipeline {
   agent none
   stages {
-    stage('Print Host Name') {
+    stage('Print Hostname') {
       steps {
-       // echo 'Hello World'
-        sh 'hostname'
+            sh 'hostname'
       }
     }
   }
