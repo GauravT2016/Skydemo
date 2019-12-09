@@ -1,13 +1,14 @@
-//pipeline {
-  //agent any
-  //stages {
-   // stage('Print Hostname') {
-     // steps {
-       //     sh 'hostname'
-     // }
-   // }
- // }
-//}
+pipeline {
+ agent any
+  stages {
+   stage('Print Hostname') {
+      steps {
+           sh 'hostname'
+      }
+   }
+ }
+}
+/*
 pipeline {
   agent any
     env.JAVA_HOME= tool name: 'myjava', type: 'jdk'
@@ -27,3 +28,4 @@ pipeline {
     } 
  }
 }
+*/
